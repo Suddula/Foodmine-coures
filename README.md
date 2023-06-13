@@ -105,7 +105,7 @@
     4.  Create tsconfig.json
     5.  Create .gitignore
     6.  Copy data.ts to backend/src
-    7.  npm install express cors
+    7.  npm install express cors(npm install express cors)
     8.  Create server.ts
         1. install @types
         2. Add Apis

@@ -27,7 +27,9 @@ import { OrderTrackPageComponent } from './components/pages/order-track-page/ord
 import { PaymentPageComponent } from './components/pages/payment-page/payment-page.component';
 import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
 import { NotFoundComponent } from './components/partials/not-found/not-found.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule} from 'ngx-toastr';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,8 +60,8 @@ import { NotFoundComponent } from './components/partials/not-found/not-found.com
     BrowserModule,
     AppRoutingModule,
    // RatingModule,
-    HttpClientModule
-
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

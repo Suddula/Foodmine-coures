@@ -28,8 +28,9 @@ import { PaymentPageComponent } from './components/pages/payment-page/payment-pa
 import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
 import { NotFoundComponent } from './components/partials/not-found/not-found.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToastrModule} from 'ngx-toastr';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,16 +59,17 @@ import { ToastrModule} from 'ngx-toastr';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
    // RatingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-function ngDoBootstrap(): any[] | import("@angular/core").Type<any> | import("@angular/core").ModuleWithProviders<{}> {
-  throw new Error('Function not implemented.');
-}
+
 
